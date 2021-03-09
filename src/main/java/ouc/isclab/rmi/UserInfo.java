@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * UserInfo
  * <p>
- * 注意：UserInfo需要实现Serializable接口，标志自身是一个支持序列号的类，
+ * 注意：UserInfo需要实现Serializable接口，标志自身是一个支持序列化的类，
  * 确保能够通过网络传输序列化的对象
  */
 public class UserInfo implements Serializable {

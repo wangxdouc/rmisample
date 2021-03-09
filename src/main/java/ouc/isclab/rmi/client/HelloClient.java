@@ -15,7 +15,7 @@ public class HelloClient {
 
     public static void main(String[] args) {
         try {
-            String remoteAddr = "rmi://192.168.1.105:1100/Hello";
+            String remoteAddr = "rmi://localhost:1100/Hello";
             Hello hello = (Hello) Naming.lookup(remoteAddr);
             String response = hello.helloWorld("Java RMI");
             System.out.println("== " + response + " ==");

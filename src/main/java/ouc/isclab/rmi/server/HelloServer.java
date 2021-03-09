@@ -23,7 +23,7 @@ public class HelloServer {
             Hello hello = new HelloImpl();
 
             // 把远程对象注册到RMI注册服务器上，并命名为Hello；绑定的URL标准格式为：rmi://host:port/name
-            //Naming.bind("rmi://localhost:1100/Hello", hello);
+            // Naming.bind("rmi://localhost:1100/Hello", hello);
             registry.bind("Hello", hello);
 
             System.out.println("RMI server running...");
